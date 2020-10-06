@@ -20,7 +20,7 @@
 
 ## Serverless (FaaS)
 
-### Cloud Functions
+### [Cloud Functions](./compute/serverless/Cloud-Functions.md#cloud-functions)
 
 1. Functions as a Service (FaaS), provides serverless execution environment for building and connecting Cloud Services.
 2. The functions are attached/watched to the Events fired/triggered/emitted by Cloud Infrastructure.
