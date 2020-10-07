@@ -38,3 +38,4 @@ Build upon [Knative](https://cloud.google.com/knative/) a Kubernetes platform fo
 #### Quests
 1. [Google Cloud Run Serverless Workshop](https://www.qwiklabs.com/quests/98?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=7363816)
 2. [Getting Started with Apache Kafka and Confluent Platform on Google Cloud](https://www.qwiklabs.com/quests/145?catalog_rank=%7B%22rank%22%3A3%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=7363816)
+3. [Getting Started with Go on Google Cloud](https://www.qwiklabs.com/quests/129?catalog_rank=%7B%22rank%22%3A20%2C%22num_filters%22%3A2%2C%22has_search%22%3Atrue%7D&search_id=7379967)

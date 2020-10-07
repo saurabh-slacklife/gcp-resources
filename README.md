@@ -2,27 +2,31 @@
 
 # Table of Contents
 
-1. [Serverless](#serverless-(faas))
+1. [Serverless](#serverless-faas)
     - [Cloud Functions (FaaS)](#cloud-functions)
         - [Sample Use Cases](#sample-use-cases)
     - [Cloud Run](#cloud-run)
     - [App Engine Standard Environment](#app-engine-standard-environment) #TODO
-2. [Managed Application Platform](#application-platform-(paas)) #TODO
+2. [Managed Application Platform](#application-platform-paas) #TODO
     - [App Engine](#app-engine)
         - [App Engine Standard Environment](#app-engine-standard-environment)
         - [App Engine Flexible Environment](#app-engine-flexible-environment)
-3. [Container technology](#containers---containers-as-a-services-(caas)) #TODO
-    - [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-(gke))
-4. [Virtual Machines (Infrastructure as a Service)](#virtual-machines-(iaas)) #TODO
+3. [Container technology](#containers---containers-as-a-services-caas) #WIP
+    - [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-gke)
+4. [Virtual Machines (Infrastructure as a Service)](#virtual-machines-iaas)
     - [Compute Instances](#compute-instances)
         - [Preemptible VMs](#preemptible-vms)
         - [Shielded VMs](#shielded-vms)
         - [Sole-Tenant nodes](#sole-tenant-nodes)
+        - [CLI Commands](./compute/iaas/virtual-machines/Compute-Instances.md#cli-commands)
+        - [Qwiklabs](./compute/iaas/virtual-machines/Compute-Instances.md#qwiklabs)
+            - [Labs](./compute/iaas/virtual-machines/Compute-Instances.md#labs)
+            - [Quests](./compute/iaas/virtual-machines/Compute-Instances.md#quests)
 4. [Hybrid Cloud Infrastructure](#hybrid-cloud-infrastructure) #TODO
     - [Anthos](#anthos)
 5. [Resources](#resources) #TODO
 
-## Serverless (FaaS)
+## Serverless FaaS
 
 ### [Cloud Functions](./compute/serverless/Cloud-Functions.md#cloud-functions)
 
@@ -67,15 +71,15 @@ A serverless container runtime, allowing to run stateless container on either Fu
 5. Ephemeral storage constrained to compute instance.
 6. SSH for debugging.
 7. Instance can scale too= - 1.
-8. pricing based upon vCpu, memory, persistent disks
+8. pricing based upon vCpu, memory, persistent disk
 
-## Containers - Containers as a Services (CaaS)
+## Containers - Containers as a Services CaaS
 
 ### [Google Kubernetes Engine (GKE)](./compute/caas/GKE.md)
 
-## Virtual Machines (IaaS)
+## Virtual Machines IaaS
 
-### [Compute Instances](./compute/iaas/Compute-Instances.md#compute-instances)
+### [Compute Instances](./compute/iaas/virtual-machines/Compute-Instances.md#compute-instances)
 1. Not managed by GCP.
 2. Works on vCPU (which is Hyperthread model).
 3. Runs Linux or Windows image which GCP provides or a private Custom images.
@@ -85,17 +89,17 @@ A serverless container runtime, allowing to run stateless container on either Fu
 7. Each VM belongs to one VPC and instances in same network communicate through Local area network.
 8. The default TZ of VM is UTC.
 
-#### [Preemptible Vms](./compute/iaas/Preemtible-Vms.md)
+#### [Preemptible Vms](./compute/iaas/virtual-machines/Preemtible-Vms.md)
 
-#### [Shielded Vms](./compute/iaas/Shielded-Vms.md)
+#### [Shielded Vms](./compute/iaas/virtual-machines/Shielded-Vms.md)
 
-#### [Sole-Tenant nodes](./compute/iaas/Sole-Tenant-Nodes.md)
+#### [Sole-Tenant nodes](./compute/iaas/virtual-machines/Sole-Tenant-Nodes.md)
 
-#### [Cloud GPUs](./compute/iaas/Cloud-GPUs.md)
+#### [Cloud GPUs](./compute/iaas/virtual-machines/Cloud-GPUs.md)
 
 ## Hybrid Cloud Infrastructure
 
-### [Anthos](./compute/hybrid/Anthos/md)
+### [Anthos](./compute/hybrid/Anthos.md)
 
 ## Resources
 [Top 3 ways to run your Containers on Google Cloud](https://youtu.be/jh0fPT-AWwM)

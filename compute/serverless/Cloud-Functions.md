@@ -38,6 +38,10 @@ Supported Events:
 12. [Using Cloud Logging with IoT Core Devices](https://www.qwiklabs.com/focuses/2768?catalog_rank=%7B%22rank%22%3A16%2C%22num_filters%22%3A2%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7367309)
 13. [Serverless Compute: Microservices with Cloud Functions](https://www.qwiklabs.com/focuses/8498?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A3%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7367344)
 
+### Quests
+
+1. [Getting Started with Go on Google Cloud](https://www.qwiklabs.com/quests/129?catalog_rank=%7B%22rank%22%3A20%2C%22num_filters%22%3A2%2C%22has_search%22%3Atrue%7D&search_id=7379967)
+
 ## Youtube
 
 - [Google Cloud Functions](https://youtu.be/1r3vMYywNLk)
