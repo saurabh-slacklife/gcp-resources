@@ -6,21 +6,25 @@
     - [Cloud Functions (FaaS)](#cloud-functions)
         - [Sample Use Cases](#sample-use-cases)
     - [Cloud Run](#cloud-run)
-2. [Managed Application Platform](#application-platform-(paas))
+    - [App Engine Standard Environment](#app-engine-standard-environment) #TODO
+2. [Managed Application Platform](#application-platform-(paas)) #TODO
     - [App Engine](#app-engine)
         - [App Engine Standard Environment](#app-engine-standard-environment)
         - [App Engine Flexible Environment](#app-engine-flexible-environment)
-3. [Container technology](#containers---containers-as-a-services-(caas))
+3. [Container technology](#containers---containers-as-a-services-(caas)) #TODO
     - [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-(gke))
-4. [Virtual Machines (Infrastructure as a Service)](#virtual-machines-(iaas))
+4. [Virtual Machines (Infrastructure as a Service)](#virtual-machines-(iaas)) #TODO
     - [Compute Instances](#compute-instances)
-4. [Hybrid Cloud Infrastructure](#hybrid-cloud-infrastructure)
+        - [Preemptible VMs](#preemptible-vms)
+        - [Shielded VMs](#shielded-vms)
+        - [Sole-Tenant nodes](#sole-tenant-nodes)
+4. [Hybrid Cloud Infrastructure](#hybrid-cloud-infrastructure) #TODO
     - [Anthos](#anthos)
-5. [Resources](#resources)
+5. [Resources](#resources) #TODO
 
 ## Serverless (FaaS)
 
-### Cloud Functions
+### [Cloud Functions](./compute/serverless/Cloud-Functions.md#cloud-functions)
 
 1. Functions as a Service (FaaS), provides serverless execution environment for building and connecting Cloud Services.
 2. The functions are attached/watched to the Events fired/triggered/emitted by Cloud Infrastructure.
@@ -48,14 +52,14 @@ A serverless container runtime, allowing to run stateless container on either Fu
 3. Supported languages Go, Java, Python, .NET, Node.js, PHP and Ruby.
 4. Is located in Multi-regional.
 
-#### App Engine Standard Environment
+#### [App Engine Standard Environment](./compute/paas/App-Engine-Standard.md)
 1. Uses Sandbox instances with supported runtime environments.
 2. Instances can scale to 0.
 3. No support for websockets.
 4. Startup time - within seconds
 5. Pricing based upon - Instance hours usage.
 
-#### App Engine Flexible Environment
+#### [App Engine Flexible Environment](./compute/paas/App-Engine-Flexible.md)
 1. Uses/Runs container on Compute instances.
 2. Runtime is container dependent.
 3. Max request timeout - 60 minutes
@@ -67,19 +71,31 @@ A serverless container runtime, allowing to run stateless container on either Fu
 
 ## Containers - Containers as a Services (CaaS)
 
-### Google Kubernetes Engine (GKE)
+### [Google Kubernetes Engine (GKE)](./compute/caas/GKE.md)
 
 ## Virtual Machines (IaaS)
 
-### Compute Instances
+### [Compute Instances](./compute/iaas/Compute-Instances.md#compute-instances)
 1. Not managed by GCP.
-2. Works on vCPU (which is Hyperthread model)
-3. Use Instance Group to manage multiple instances together, configure autoscaling.
-4. Attache Persistent disk - SSD with default AES 256 encryption or HDD with default AES 128 encryption.
+2. Works on vCPU (which is Hyperthread model).
+3. Runs Linux or Windows image which GCP provides or a private Custom images.
+4. Use Instance Group to manage multiple instances together, configure autoscaling.
+5. Attache Persistent disk - SSD with default AES 256 encryption or HDD with default AES 128 encryption. Has a default boot persistent disk
+6. Can also run Docker containers on [Container-Optimized](https://cloud.google.com/container-optimized-os/docs) OS image.
+7. Each VM belongs to one VPC and instances in same network communicate through Local area network.
+8. The default TZ of VM is UTC.
+
+#### [Preemptible Vms](./compute/iaas/Preemtible-Vms.md)
+
+#### [Shielded Vms](./compute/iaas/Shielded-Vms.md)
+
+#### [Sole-Tenant nodes](./compute/iaas/Sole-Tenant-Nodes.md)
+
+#### [Cloud GPUs](./compute/iaas/Cloud-GPUs.md)
 
 ## Hybrid Cloud Infrastructure
 
-### Anthos
+### [Anthos](./compute/hybrid/Anthos/md)
 
 ## Resources
 [Top 3 ways to run your Containers on Google Cloud](https://youtu.be/jh0fPT-AWwM)
