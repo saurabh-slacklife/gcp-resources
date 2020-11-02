@@ -58,6 +58,8 @@ Sole-tenancy lets you have exclusive access to a sole-tenant node, which is a ph
 > ``gcloud config set compute/zone us-east1-a``
 >
 > ``gcloud compute instances create example-instance --zone us-central1-f``
+> ``gcloud compute instances create example-instance --zone us-central1-f --metadata startup-script="apt-get install apache"``
+> ``gcloud compute instances create example-instance --zone us-central1-f --metadata-from-file startup-script="/opt/scripts/startup.sh""``
 
 #### List, describe and filter instances
 
@@ -87,6 +89,14 @@ Sole-tenancy lets you have exclusive access to a sole-tenant node, which is a ph
 >> --member should be of the form ``user|group|serviceAccount:email or domain:domain``
 >>>
 >> Examples: ``user:test-user@gmail.com, group:admins@example.com, serviceAccount:test123@example.domain.com, or domain:example.domain.com``
+
+#### Working with Images
+
+> ``gcloud compute images list`` 
+> ``gcloud compute images create my-image --source-image=source-image --source-image-project=source-project`` 
+> ``gcloud compute images create my-image --source-image-family=source-image-family --source-image-project=source-project`` 
+> ``gcloud compute images create my-image --source-snapshot=source-snapshot`` 
+> ``glcoud compute images delete my-image1 my-image2 --zone=us-east1-a --region=us-east1``
 
 #### Help documents
 > ``gcloud compute instances --help``
