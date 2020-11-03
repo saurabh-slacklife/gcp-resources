@@ -90,16 +90,73 @@ Sole-tenancy lets you have exclusive access to a sole-tenant node, which is a ph
 >>>
 >> Examples: ``user:test-user@gmail.com, group:admins@example.com, serviceAccount:test123@example.domain.com, or domain:example.domain.com``
 
+#### Working with Disks
+
+Read or manage(create, delete) one or more persistent disks
+
+> ``gcloud comute disks list``
+>
+> ``gcloud compute disks create my-disk-1 my-disk-2 --zone us-central1-a``
+>
+> ``gcloud compute disks create my-disk-1 --source-disk=disk --zone us-central1-a``
+>
+> ``gcloud compute disks create my-disk-1 --source-snapshot=snapshot --zone us-central1-a``
+>
+> ``gcloud compute disks delete my-disk-1 --zone us-central1-a``
+>
+
 #### Working with Images
 
+Read or manage(create, delete) one or more images 
+
 > ``gcloud compute images list`` 
+>
 > ``gcloud compute images create my-image --source-image=source-image --source-image-project=source-project`` 
+>
 > ``gcloud compute images create my-image --source-image-family=source-image-family --source-image-project=source-project`` 
+>
 > ``gcloud compute images create my-image --source-snapshot=source-snapshot`` 
+>
 > ``glcoud compute images delete my-image1 my-image2 --zone=us-east1-a --region=us-east1``
 
+#### Working with Instance Templates
+
+Read or manage(create, delete) one or more images 
+
+> ``gcloud compute instance-templates list`` 
+>
+> ``gcloud compute instance-templates create instance-template-1`` 
+>
+> ``gcloud compute instance-templates create instance-template-1 --source-instance=instance1`` 
+>
+> ``gcloud compute instance-templates describe instance-template-1`` 
+>
+> ``gcloud compute instance-templates delete instance-template-1`` 
+
+#### Working with Instance Groups
+
+Read or manage(create, delete) one or more images 
+
+> ``gcloud compute instance-groups managed list`` 
+>
+> ``gcloud compute instance-groups unmanaged list`` 
+>
+> ``gcloud compute instance-groups managed list-instances`` 
+>
+> ``gcloud compute instance-groups unmanaged list-instances`` 
+>
+> ``gcloud compute instance-groups managed create instance-group-1 --template=instance-template-1 --size=2`` 
+>
+> ``gcloud compute instance-groups managed create-instance <instance-group> --instance=instance-1`` 
+>
+> ``gcloud compute instance-groups managed describe instance-group-1`` 
+>
+> ``gcloud compute instance-groups managed describe --zone us-central1-a`` 
+>
+> ``gcloud compute instance-groups managed delete instance-group-1`` 
+
 #### Help documents
-> ``gcloud compute instances --help``
+> ``gcloud compute --help``
 
 ## Resources
 

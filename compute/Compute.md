@@ -18,17 +18,18 @@
         - [Preemptible VMs](#preemptible-vms)
         - [Shielded VMs](#shielded-vms)
         - [Sole-Tenant nodes](#sole-tenant-nodes)
-        - [CLI Commands](./compute/iaas/virtual-machines/Compute-Instances.md#cli-commands)
-        - [Qwiklabs](./compute/iaas/virtual-machines/Compute-Instances.md#qwiklabs)
-            - [Labs](./compute/iaas/virtual-machines/Compute-Instances.md#labs)
-            - [Quests](./compute/iaas/virtual-machines/Compute-Instances.md#quests)
+        - [CLI Commands](./iaas/virtual-machines/Compute-Instances.md#cli-commands)
+        - [Qwiklabs](./iaas/virtual-machines/Compute-Instances.md#qwiklabs)
+            - [Labs](./iaas/virtual-machines/Compute-Instances.md#labs)
+            - [Quests](./iaas/virtual-machines/Compute-Instances.md#quests)
 4. [Hybrid Cloud Infrastructure](#hybrid-cloud-infrastructure) #TODO
     - [Anthos](#anthos)
 5. [Resources](#resources) #TODO
 
 ## Serverless FaaS
 
-### [Cloud Functions](./compute/serverless/Cloud-Functions.md#cloud-functions)
+### [Cloud Functions](./serverless/Cloud-Functions.md#cloud-functions)
+
 
 1. Functions as a Service (FaaS), provides serverless execution environment for building and connecting Cloud Services.
 2. The functions are attached/watched to the Events fired/triggered/emitted by Cloud Infrastructure.
@@ -44,7 +45,8 @@
 3. Lightweight Loosely coupled stateless APIs.
 4. Mobile backend functions.
 
-### [Cloud Run](./compute/serverless/Cloud-Run.md#cloud-run)
+### [Cloud Run](./serverless/Cloud-Run.md#cloud-run)
+
 A serverless container runtime, allowing to run stateless container on either Fully managed Cloud Run, GKE Cluster or On-Prem Cloud Run for Anthos.
 
 ## Application Platform (PaaS)
@@ -56,14 +58,16 @@ A serverless container runtime, allowing to run stateless container on either Fu
 3. Supported languages Go, Java, Python, .NET, Node.js, PHP and Ruby.
 4. Is located in Multi-regional.
 
-#### [App Engine Standard Environment](./compute/paas/App-Engine-Standard.md)
+#### [App Engine Standard Environment](./paas/App-Engine-Standard.md)
+
 1. Uses Sandbox instances with supported runtime environments.
 2. Instances can scale to 0.
 3. No support for websockets.
 4. Startup time - within seconds
 5. Pricing based upon - Instance hours usage.
 
-#### [App Engine Flexible Environment](./compute/paas/App-Engine-Flexible.md)
+#### [App Engine Flexible Environment](./paas/App-Engine-Flexible.md)
+
 1. Uses/Runs container on Compute instances.
 2. Runtime is container dependent.
 3. Max request timeout - 60 minutes
@@ -75,11 +79,12 @@ A serverless container runtime, allowing to run stateless container on either Fu
 
 ## Containers - Containers as a Services CaaS
 
-### [Google Kubernetes Engine (GKE)](./compute/caas/GKE.md)
+### [Google Kubernetes Engine (GKE)](./caas/GKE.md)
 
 ## Virtual Machines IaaS
 
-### [Compute Instances](./compute/iaas/virtual-machines/Compute-Instances.md#compute-instances)
+### [Compute Instances](./iaas/virtual-machines/Compute-Instances.md#compute-instances)
+
 1. Not managed by GCP.
 2. Works on vCPU (which is Hyperthread model).
 3. Runs Linux or Windows image which GCP provides or a private Custom images.
@@ -89,17 +94,17 @@ A serverless container runtime, allowing to run stateless container on either Fu
 7. Each VM belongs to one VPC and instances in same network communicate through Local area network.
 8. The default TZ of VM is UTC.
 
-#### [Preemptible Vms](./compute/iaas/virtual-machines/Preemtible-Vms.md)
+#### [Preemptible Vms](./iaas/virtual-machines/Preemtible-Vms.md)
 
-#### [Shielded Vms](./compute/iaas/virtual-machines/Shielded-Vms.md)
+#### [Shielded Vms](./iaas/virtual-machines/Shielded-Vms.md)
 
-#### [Sole-Tenant nodes](./compute/iaas/virtual-machines/Sole-Tenant-Nodes.md)
+#### [Sole-Tenant nodes](./iaas/virtual-machines/Sole-Tenant-Nodes.md)
 
-#### [Cloud GPUs](./compute/iaas/virtual-machines/Cloud-GPUs.md)
+#### [Cloud GPUs](./iaas/virtual-machines/Cloud-GPUs.md)
 
 ## Hybrid Cloud Infrastructure
 
-### [Anthos](./compute/hybrid/Anthos.md)
+### [Anthos](./hybrid/Anthos.md)
 
 ## Resources
 [Top 3 ways to run your Containers on Google Cloud](https://youtu.be/jh0fPT-AWwM)
