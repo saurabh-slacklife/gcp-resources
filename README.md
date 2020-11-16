@@ -9,6 +9,14 @@
 4. [Big data](#big-data) #TODO
 5. [Machine Learning](#machine-learning) #TODO
 
+Before everything let's see what the GCP CLI Cheatsheet looks like:
+
+[GCP Cheatsheet](https://cloud.google.com/sdk/docs/cheatsheet#cheat_sheet)
+
+![GCP Cheatsheet](https://cloud.google.com/sdk/docs/images/gcloud-cheat-sheet.pdf)
+
+![GCP Services Cheatsheet](https://github.com/gregsramblings/google-cloud-4-words/blob/master/Poster-hires.png)
+
 ## Compute
 
 GCP offers [Compute](./compute/Compute.md) options from IaaS to Serverless. The Virtual Machines(VM) works on Hyper Thread model with each Virtual CPU(vCPU) corresponds to one Hyper Thread.
