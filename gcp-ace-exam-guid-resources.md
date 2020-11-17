@@ -54,21 +54,78 @@
 ## 2.3 Planning and configuring data storage options. Considerations include:
 - Product choice (e.g., Cloud SQL, BigQuery, Cloud Spanner, Cloud Bigtable)
     - Qwiklabs
+      - [Cloud SQL]()
+      - [Cloud Spanner]()
+      - [Cloud Bigtable]()
+      - [Cloud BigQuery]()
+      - [Cloud Memorystore]()
+      - [Cloud Firestore]()
+      - [Cloud Filestore]()
+      - [Cloud Storage for Firebase]()
     - GCP Docs
+      - [Cloud SQL](ihttps://cloud.google.com/sql/docs/concepts)
+      - [Cloud Spanner](https://cloud.google.com/spanner/docs/concepts)
+      - [Cloud Bigtable](https://cloud.google.com/bigtable/docs/concepts)
+      - [Cloud BigQuery](https://cloud.google.com/bigquery/docs/tutorials)
+      - [Cloud Memorystore](ihttps://cloud.google.com/memorystore/docs/redis/concepts)
+      - [Cloud Firestore](https://cloud.google.com/firestore/docs/concepts)
+      - [Cloud Filestore](https://cloud.google.com/filestore/docs/concepts)
+      Below is not part of Exam guide but quick view is good.
+      - [Cloud Storage for Firebase](https://firebase.google.com/docs)
 - Choosing storage options (e.g., Standard, Nearline, Coldline, Archive)
     - Qwiklabs
+      - [Cloud Storage](https://cloud.google.com/storage/docs/concepts)
+      - [Cloud Storage Standard](https://cloud.google.com/storage/docs/storage-classes#standard)
+      - [Cloud Storage Nearline](https://cloud.google.com/storage/docs/storage-classes#nearline)
+      - [Cloud Storage Coldline](https://cloud.google.com/storage/docs/storage-classes#coldline)
+      - [Cloud Storage Archive](https://cloud.google.com/storage/docs/storage-classes#archive)
+      - [Cloud Storage Additional/Legacy Classes](https://cloud.google.com/storage/docs/storage-classes#legacy)
     - GCP Docs
       - [Cloud Storage](https://cloud.google.com/storage/docs/concepts)
+      - [Cloud Storage Standard](https://cloud.google.com/storage/docs/storage-classes#standard)
+      - [Cloud Storage Nearline](https://cloud.google.com/storage/docs/storage-classes#nearline)
+      - [Cloud Storage Coldline](https://cloud.google.com/storage/docs/storage-classes#coldline)
+      - [Cloud Storage Archive](https://cloud.google.com/storage/docs/storage-classes#archive)
+      - [Cloud Storage Additional/Legacy Classes](https://cloud.google.com/storage/docs/storage-classes#legacy)
 ## 2.4 Planning and configuring network resources. Tasks include:
 - Differentiating load balancing options
     - Qwiklabs
     - GCP Docs
+      - [Cloud Balancing Overview](https://cloud.google.com/load-balancing/docs/load-balancing-overview)
+      - [Cloud Load Balancing](https://cloud.google.com/load-balancing)
+      - [Choosing Load Balancer](https://cloud.google.com/load-balancing/docs/choosing-load-balancer)
+      - [Summary of Load Balancing Options](https://cloud.google.com/load-balancing/docs/choosing-load-balancer#summary-of-google-cloud-load-balancers)
+      - [L7 Internal HTTP(s) LB](https://cloud.google.com/load-balancing/docs/l7-internal)
+      - [External HTTP(s) LB](https://cloud.google.com/load-balancing/docs/https)
+      - [Internal TCP/UDP LB](https://cloud.google.com/load-balancing/docs/internal)
+      - [External TCP/UDP Network LB](https://cloud.google.com/load-balancing/docs/network)
+      - [SSL Proxy LB](https://cloud.google.com/load-balancing/docs/ssl)
+      - [TCP Proxy LB](https://cloud.google.com/load-balancing/docs/tcp)
 - Identifying resource locations in a network for availability
     - Qwiklabs
     - GCP Docs
+      - [Creating VPC](https://cloud.google.com/vpc/docs/using-vpc#creating_networks)
+      - [Working with Subnets](https://cloud.google.com/vpc/docs/using-vpc#subnet-rules)
+      - [Modify Networks](https://cloud.google.com/vpc/docs/using-vpc#modifying_a_vpc_network)
+      - [Create Firewall Rules](https://cloud.google.com/vpc/docs/using-firewalls#creating_firewall_rules)
+      - [Using Routes](https://cloud.google.com/vpc/docs/using-routes)
+      - [Network Tags](https://cloud.google.com/vpc/docs/add-remove-network-tags)
+      - [Provision Shared VPC](https://cloud.google.com/vpc/docs/provisioning-shared-vpc)
+      - [De-Provision SHared VPC](https://cloud.google.com/vpc/docs/deprovisioning-shared-vpc)
+      - [VPC Network Peering](https://cloud.google.com/vpc/docs/using-vpc-peering)
+      - [Create Instances with Multiple Network Interfaces](https://cloud.google.com/vpc/docs/create-use-multiple-interfaces)
+      - [Reserve Static Internal IP](https://cloud.google.com/compute/docs/ip-addresses/reserve-static-internal-ip-address)
+      - [Reserve Static External IP](https://cloud.google.com/compute/docs/ip-addresses/reserve-static-external-ip-address)
+      - [Cloud VPN](https://cloud.google.com/network-connectivity/docs/vpn/concepts)
+      - [Cloud Interconnect](https://cloud.google.com/network-connectivity/docs/interconnect/concepts)
+        - Partner Interconnect
+        - Dedicated Interconnect
+      - [Cloud Router](https://cloud.google.com/network-connectivity/docs/router/concepts)
 - Configuring Cloud DNS
     - Qwiklabs
     - GCP Docs
+      - [Cloud DNS](https://cloud.google.com/dns/docs/concepts)
+      - [DNS Security (DNSSEC)](https://cloud.google.com/dns/docs/dnssec-config)
 
 # 3. Deploying and implementing a cloud solution
 
@@ -86,6 +143,7 @@
 - Generating/uploading a custom SSH key for instances
     - Qwiklabs
     - GCP Docs
+      - [SSH with Security keys](https://cloud.google.com/compute/docs/tutorials/ssh-with-sk)
 - Configuring a VM for Stackdriver monitoring and logging
     - Qwiklabs
     - GCP Docs
@@ -95,11 +153,19 @@
 - Installing the Stackdriver Agent for monitoring and logging
     - Qwiklabs
     - GCP Docs
+      - [Operations (Formerly Stackdriver)](https://cloud.google.com/products/operations)
 
 ## 3.2 Deploying and implementing Google Kubernetes Engine resources. Tasks include:
 - Deploying a Google Kubernetes Engine cluster
     - Qwiklabs
+      - [Deploy K8s to GCP](https://google.qwiklabs.com/quests/116?utm_source=google&utm_medium=lp&utm_campaign=GKE)
+      - [K8s Solutions](https://google.qwiklabs.com/quests/45?utm_source=google&utm_medium=lp&utm_campaign=GKE)
     - GCP Docs
+      - [Create Zonal Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-zonal-cluster)
+      - [Create Regional CLuster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-regional-cluster)
+      - [Create Private Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters)
+      - [Create Alpha Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-an-alpha-cluster)
+      - [Create Windows Server Node pool cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster-windows)
 - Deploying a container application to Google Kubernetes Engine using pods
     - Qwiklabs
     - GCP Docs
