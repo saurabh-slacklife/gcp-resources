@@ -40,32 +40,24 @@
 ## 2.1 Planning and estimating GCP product use using the Pricing Calculator
 ## 2.2 Planning and configuring compute resources. Considerations include:
 - Selecting appropriate compute choices for a given workload (e.g., Compute Engine, Google Kubernetes Engine, App Engine, Cloud Run, Cloud Functions)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
-      - [Compute Engine](https://cloud.google.com/compute/docs/concepts)
-      - [GKE](https://cloud.google.com/kubernetes-engine/docs/concepts)
-      - [App Engine](https://cloud.google.com/appengine/docs)
-      - [Cloud Run](https://cloud.google.com/run/docs/concepts)
-      - [Cloud Functions](https://cloud.google.com/functions/docs/concepts)
-</details>
+      [Compute Engine](https://cloud.google.com/compute/docs/concepts)
+      [GKE](https://cloud.google.com/kubernetes-engine/docs/concepts)
+      [App Engine](https://cloud.google.com/appengine/docs)
+      [Cloud Run](https://cloud.google.com/run/docs/concepts)
+      [Cloud Functions](https://cloud.google.com/functions/docs/concepts)
 
 - Using preemptible VMs and custom machine types as appropriate
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Preempitble](https://cloud.google.com/compute/docs/instances/preemptible)
       - [Custom Machine Types](https://cloud.google.com/compute/docs/machine-types#custom_machine_types)
-</details>
 
 ## 2.3 Planning and configuring data storage options. Considerations include:
 - Product choice (e.g., Cloud SQL, BigQuery, Cloud Spanner, Cloud Bigtable)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
       - [Cloud SQL]()
@@ -86,11 +78,8 @@
       - [Cloud Filestore](https://cloud.google.com/filestore/docs/concepts)
       Below is not part of Exam guide but quick view is good.
       - [Cloud Storage for Firebase](https://firebase.google.com/docs)
-</details>
 
 - Choosing storage options (e.g., Standard, Nearline, Coldline, Archive)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
       - [Cloud Storage](https://cloud.google.com/storage/docs/concepts)
@@ -106,12 +95,9 @@
       - [Cloud Storage Coldline](https://cloud.google.com/storage/docs/storage-classes#coldline)
       - [Cloud Storage Archive](https://cloud.google.com/storage/docs/storage-classes#archive)
       - [Cloud Storage Additional/Legacy Classes](https://cloud.google.com/storage/docs/storage-classes#legacy)
-</details>
 
 ## 2.4 Planning and configuring network resources. Tasks include:
 - Differentiating load balancing options
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
@@ -125,11 +111,8 @@
       - [External TCP/UDP Network LB](https://cloud.google.com/load-balancing/docs/network)
       - [SSL Proxy LB](https://cloud.google.com/load-balancing/docs/ssl)
       - [TCP Proxy LB](https://cloud.google.com/load-balancing/docs/tcp)
-</details>
 
 - Identifying resource locations in a network for availability
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
@@ -150,49 +133,36 @@
         - Partner Interconnect
         - Dedicated Interconnect
       - [Cloud Router](https://cloud.google.com/network-connectivity/docs/router/concepts)
-</details>
 
 - Configuring Cloud DNS
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Cloud DNS](https://cloud.google.com/dns/docs/concepts)
       - [DNS Security (DNSSEC)](https://cloud.google.com/dns/docs/dnssec-config)
-</details>
 
 # 3. Deploying and implementing a cloud solution
 
 ## 3.1 Deploying and implementing Compute Engine resources. Tasks include:
 - Launching a compute instance using Cloud Console and Cloud SDK (gcloud) (e.g., assign disks, availability policy, SSH keys)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Compute Engine](https://cloud.google.com/compute/docs/concepts)
-</details>
 
 - Creating an autoscaled managed instance group using an instance template
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Instance Template](https://cloud.google.com/compute/docs/instance-templates)
       - [Instance Group](https://cloud.google.com/compute/docs/instance-groups)
       - [Create Managed Instance Group](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances)
-</details>
 
 - Generating/uploading a custom SSH key for instances
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [SSH with Security keys](https://cloud.google.com/compute/docs/tutorials/ssh-with-sk)
-</details>
 
 - Configuring a VM for Stackdriver monitoring and logging
     - Qwiklabs
@@ -207,8 +177,6 @@
 
 ## 3.2 Deploying and implementing Google Kubernetes Engine resources. Tasks include:
 - Deploying a Google Kubernetes Engine cluster
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
       - [Deploy K8s to GCP](https://google.qwiklabs.com/quests/116?utm_source=google&utm_medium=lp&utm_campaign=GKE)
@@ -219,7 +187,6 @@
       - [Create Private Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters)
       - [Create Alpha Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-an-alpha-cluster)
       - [Create Windows Server Node pool cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster-windows)
-</details>
 
 - Deploying a container application to Google Kubernetes Engine using pods
     - Qwiklabs
@@ -280,8 +247,6 @@
 # 4. Ensuring successful operation of a cloud solution
 ## 4.1 Ensuring successful operation of a cloud solution
 - Managing a single VM instance (e.g., start, stop, edit configuration, or delete an instance)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
@@ -289,45 +254,33 @@
       - [Suspend Resume](https://cloud.google.com/compute/docs/instances/suspend-resume-instance)
       - [Delete](https://cloud.google.com/compute/docs/instances/deleting-instance)
       - [Update Instance Properties](https://cloud.google.com/compute/docs/instances/update-instance-properties)
-</details>
 
 - SSH/RDP to the instance
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Connect](https://cloud.google.com/compute/docs/instances/connecting-to-instance)
       - [Advance Connect](https://cloud.google.com/compute/docs/instances/connecting-advanced)
-</details>
 
 - Attaching a GPU to a new instance and installing CUDA libraries
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Add GPU](https://cloud.google.com/compute/docs/gpus/add-gpus)
       - [Add Drivers](https://cloud.google.com/compute/docs/gpus/install-drivers-gpu)
-</details>
 
 - Viewing current running VM inventory (instance IDs, details)
     - Qwiklabs
     - GCP Docs
 - Working with snapshots (e.g., create a snapshot from a VM, view snapshots, delete a snapshot)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Create Snapshot](https://cloud.google.com/compute/docs/disks/create-snapshots)
       - [Create Scheduled Snapshot](https://cloud.google.com/compute/docs/disks/scheduled-snapshots)
       - [Restore-Delete Snapshot](https://cloud.google.com/compute/docs/disks/restore-and-delete-snapshots)
-</details>
 
 - Working with images (e.g., create an image from a VM or a snapshot, view images, delete an image)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
@@ -335,17 +288,13 @@
       - [Create InstanceFrom Image](https://cloud.google.com/compute/docs/machine-images/create-instance-from-machine-image)
       - [View Source Image](https://cloud.google.com/compute/docs/instances/view-vm-image)
       - [Delete Custom Image](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images)
-</details>
 
 - Working with instance groups (e.g., set autoscaling parameters, assign instance template, create an instance template, remove instance group)
-<details>
-  <summary> GCP Docs and Qwiklabs </summary>
 
     - Qwiklabs
     - GCP Docs
       - [Instance Group](https://cloud.google.com/compute/docs/instance-groups)
       - [Create Managed Instance Group](https://cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances)
-</details>
 
 - Working with management interfaces (e.g., Cloud Console, Cloud Shell, GCloud SDK)
     - Qwiklabs
